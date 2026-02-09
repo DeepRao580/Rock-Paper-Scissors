@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper & Scissors using Functions</title>
+    <link rel="stylesheet" href="12-rock-paper-scissors.css">
+</head>
+<body>
+    <div class="game">
+    <p class="rps">Rock Paper Scissors</p>
+    <div class="teeno">
+    <button onclick="
+    pickComputerMove();
+    playgame('Rock');" class="move-button"><img src="rock-emoji.png" class="move-icon"></button>
+
+
+    <button onclick="
+    pickComputerMove();
+    playgame('Paper');" class="move-button"><img src="paper-emoji.png" class="move-icon" alt=""></button>
+
+
+    <button onclick="
+    pickComputerMove();
+    playgame('Scissors');" class="move-button"><img src="scissors-emoji.png" class="move-icon" alt=""></button>
+    </div>
+
+
+    <p class="js-score"></p>
+    <p class="js-moves">
+        You <img src="rock-emoji.png" alt="" class="move-icon">
+        <img src="scissors-emoji.png" alt="" class="move-icon">
+        Computer
+    </p>
+    <p class="js-result"></p>
+    <div class="buttons">
+    <button onclick="
+    score.Wins=0;
+    score.Losses=0;
+    score.Ties=0;
+    localStorage.removeItem('score');" class="Reset">Reset Score</button>
+    <button class="auto"
+    onclick="autoPlay();">Auto Play</button>
+    <button onclick="stopAutoplay()" class="auto">Stop Auto</button>
+    </div>
+    </div>
+    <script src="12-rock-paper-scissors.js"></script>
+</body>
+</html>
